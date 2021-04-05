@@ -1,4 +1,8 @@
-# ChartsApp
+# Charts App
+
+Charts application that uses the ng2-charts libraries in different ways
+
+Based on the projects by Fernando Herrera - https://www.udemy.com/course/angular-fernando-herrera/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
