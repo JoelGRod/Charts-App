@@ -1,1 +1,16 @@
-<p>bars-double-page works!</p>
+<h1>Bars Charts - Bar Component</h1>
+<hr>
+
+<div class="row">
+    <div class="col-12 mb-3 col-xl-6 mb-xl-0">
+        <app-chart-bar [isHorizontal]="true"
+                       [barChartLabels]="yearLabels"
+                       [barChartData]="productData">
+        </app-chart-bar>
+    </div>
+    <div class="col-12 mb-3 col-xl-6 mb-xl-0">
+        <app-chart-bar [barChartLabels]="yearLabels"
+                       [barChartData]="sellersData">
+        </app-chart-bar>
+    </div>
+</div>
