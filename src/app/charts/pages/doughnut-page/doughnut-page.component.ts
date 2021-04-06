@@ -20,10 +20,8 @@ export class DoughnutPageComponent implements OnInit {
     {
       backgroundColor: [
         '#8E33F2',
-        '#5E35FC',
-        '#3B46E6',
-        '#3577FC',
         '#33A4F2',
+        '#3577FC'
       ]
     }
   ]
