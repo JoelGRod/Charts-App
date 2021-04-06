@@ -10,6 +10,7 @@ import { DoughnutPageComponent } from './pages/doughnut-page/doughnut-page.compo
 import { DoughnutHttpPageComponent } from './pages/doughnut-http-page/doughnut-http-page.component';
 // Components
 import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
+import { ChartDoughnutComponent } from './components/chart-doughnut/chart-doughnut.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
     DoughnutPageComponent, 
     DoughnutHttpPageComponent, 
     // Components
-    ChartBarComponent
+    ChartBarComponent, 
+    ChartDoughnutComponent
   ],
   imports: [
     CommonModule,
