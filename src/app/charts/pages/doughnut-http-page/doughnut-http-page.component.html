@@ -1,1 +1,21 @@
-<p>doughnut-http-page works!</p>
+<h1>Doughnut Chart</h1>
+<hr>
+
+<div class="row">
+    <div class="col-12 col-xl-6">
+
+        <app-chart-doughnut [doughnutChartData]="testChartData"
+                            [doughnutChartLabels]="testLabels"
+                            [colors]="colors">
+        </app-chart-doughnut>
+        
+    </div>
+    <div class="col-12 col-xl-6">
+        
+        <app-chart-doughnut [doughnutChartData]="testChartData"
+                            [doughnutChartLabels]="testLabels"
+                            [colors]="colors">
+        </app-chart-doughnut>
+
+    </div>
+</div>
