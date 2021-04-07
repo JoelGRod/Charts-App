@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { Color, Label, MultiDataSet } from 'ng2-charts';
 
@@ -8,7 +8,7 @@ import { Color, Label, MultiDataSet } from 'ng2-charts';
   styles: [
   ]
 })
-export class ChartDoughnutComponent implements OnInit {
+export class ChartDoughnutComponent {
 
   // Doughnut
   @Input() doughnutChartLabels: Label[] = [
@@ -27,12 +27,8 @@ export class ChartDoughnutComponent implements OnInit {
     //     '#33A4F2',
     //   ]
     // }
-  ]
+  ];
+
   public doughnutChartType: ChartType = 'doughnut';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
