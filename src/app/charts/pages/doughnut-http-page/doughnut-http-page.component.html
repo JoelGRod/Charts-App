@@ -1,21 +1,21 @@
 <h1>Doughnut Chart</h1>
+<h4>Doughnut component + http request</h4>
 <hr>
 
+<div *ngIf="testChartData.length === 0; else chartDiv" 
+     class="alert alert-info">
+    Loading...
+</div>
+
 <div class="row">
-    <div class="col-12 col-xl-6">
+    <div class="col-12">
 
-        <app-chart-doughnut [doughnutChartData]="testChartData"
-                            [doughnutChartLabels]="testLabels"
-                            [colors]="colors">
-        </app-chart-doughnut>
+        <ng-template #chartDiv>
+            <app-chart-doughnut [doughnutChartData]="testChartData"
+                                [doughnutChartLabels]="testLabels"
+                                [colors]="colors">
+            </app-chart-doughnut>
+        </ng-template>
         
-    </div>
-    <div class="col-12 col-xl-6">
-        
-        <app-chart-doughnut [doughnutChartData]="testChartData"
-                            [doughnutChartLabels]="testLabels"
-                            [colors]="colors">
-        </app-chart-doughnut>
-
     </div>
 </div>
